@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play card</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .card {
+        border: 2px solid black;
+        width: 200px;
+        height: 300px;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        font-size: 25px;
+        padding: 5px;
+        margin: 50px;
+        /* color: red; */
+      }
+      .top,
+      .bottom {
+        text-align: center;
+      }
+      .center {
+        font-size: 100px;
+        padding-top: 50%;
+        text-align: center;
+      }
+      .bottom {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="top">
+        <div>A</div>
+        <div>&spades;</div>
+      </div>
+      <div class="center">
+        <div>&spades;</div>
+      </div>
+      <div class="bottom">
+        <div>A</div>
+        <div>&spades;</div>
+      </div>
+    </div>
+  </body>
+</html>

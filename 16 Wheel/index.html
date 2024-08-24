@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>India Flag</title>
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(89, 65, 225);
+      }
+      .cycle {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        border: 2px solid #fefcfc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* box-shadow: 3px 3px 16px 5px #ff0004; */ /* this code line use in wheel2 and wheel3 */
+        animation-name: example;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      /* wheel 1 code below */
+      /* .line {
+        background: rgb(37, 245, 151);
+        border: 0.5px solid wheat;
+        width: 100%;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: rgb(51, 239, 229);
+      } */
+
+      /* create two color wheel code */
+      /* below code wheel 2 */
+      /* .line {
+        background: linear-gradient(160deg, #ec0606, #3df714);
+        border: 0.5px solid wheat;
+        width: 100%;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: rgb(51, 239, 229); 
+      }
+*/
+
+      /* create multi color wheel line  */
+      /* wheel 3 code is below */
+      .line {
+        border: 0.5px solid wheat;
+        width: 100%;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: rgb(51, 239, 229);
+      }
+
+      .line1 {
+        transform: rotate(15deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: red;
+      }
+      .line2 {
+        transform: rotate(30deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: orange;
+      }
+      .line3 {
+        transform: rotate(45deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: orangered;
+      }
+      .line4 {
+        transform: rotate(60deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: yellow;
+      }
+      .line5 {
+        transform: rotate(75deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: yellowgreen;
+      }
+      .line6 {
+        transform: rotate(90deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: greenyellow;
+      }
+      .line7 {
+        transform: rotate(105deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: pink;
+      }
+      .line8 {
+        transform: rotate(120deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: rgb(14, 251, 6);
+      }
+      .line9 {
+        transform: rotate(135deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: rgb(18, 192, 245);
+      }
+      .line10 {
+        transform: rotate(150deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: rgb(55, 198, 69);
+      }
+      .line12 {
+        transform: rotate(165deg);
+        z-index: 0;
+        /* below bg color code use in wheel 3 only */
+        /* wheel 3 */
+        background-color: #ff0b9d;
+      }
+      @keyframes example {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="cycle">
+        <div class="line line1"></div>
+        <div class="line line2"></div>
+        <div class="line line3"></div>
+        <div class="line line4"></div>
+        <div class="line line5"></div>
+        <div class="line line6"></div>
+        <div class="line line7"></div>
+        <div class="line line8"></div>
+        <div class="line line9"></div>
+        <div class="line line10"></div>
+        <div class="line line11"></div>
+        <div class="line line12"></div>
+      </div>
+    </div>
+  </body>
+</html>
