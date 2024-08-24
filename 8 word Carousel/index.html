@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Carousel</title>
+    <style>
+      body {
+        background-color: salmon;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        font-size: 40px;
+        position: relative;
+        color: bisque;
+      }
+      @keyframes changeWord {
+        10% {
+          content: "Coding";
+          /* opacity: 1; */
+        }
+        30% {
+          content: "Cat";
+          /* opacity: 1; */
+        }
+        45% {
+          content: "Dog";
+          /* opacity: 1; */
+        }
+        60% {
+          content: "JavaScript";
+          /* opacity: 1; */
+        }
+        75% {
+          content: "Java";
+          /* opacity: 1; */
+        }
+        90% {
+          content: "CSS";
+          /* opacity: 1; */
+        }
+        100% {
+          content: "Python";
+          /* opacity: 1; */
+        }
+      }
+      .span::after {
+        content: "Html";
+        animation: changeWord 6s infinite;
+      }
+      .span {
+        border: 2px solid black;
+        padding: 10px;
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 class="name">I love <span class="span"></span></h2>
+  </body>
+</html>

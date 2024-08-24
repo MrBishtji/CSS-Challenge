@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spoiler Revealer</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        background-color: #ffeebb;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .box {
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #8bb6cc;
+        width: 50%;
+        padding: 25px;
+        margin: 25px;
+      }
+      h1 {
+        margin: 20px;
+      }
+      .box span {
+        background-color: black;
+      }
+      .box span:hover {
+        background-color: #8bb6cc;
+        transition: background 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Spoiler Revealer</h1>
+      <div class="box box1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit.
+          <span>
+            Nam quos debitis aspernatur quam expedita eaque laudantium placeat
+            dicta nostrum.Lorem ipsum dolor sit amet
+          </span>
+        </p>
+      </div>
+      <div class="box box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.<span
+          >Delectus ullam laborum incidunt Lorem ipsum
+        </span>
+      </div>
+      <div class="box box3">
+        Nam quos debitis aspernatur quam expedita eaque Lorem ipsum dolor sit
+        amet,
+        <span
+          >consectetur adipisicing elit. Provident, laudantium placeat dicta
+          nostrum.</span
+        >
+      </div>
+    </div>
+  </body>
+</html>

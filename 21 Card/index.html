@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      /* .container {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+      }
+      .card {
+        border: 2px solid black;
+        height: 200px;
+        width: 120px;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        font-size: 25px;
+        color: red;
+        padding: 5px;
+      }
+      .center {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        text-align: center;
+        font-size: 50px;
+      }
+      .bottom {
+        rotate: 180deg;
+      }
+      .top div:first-child,
+      .bottom div:first-child {
+        padding-left: 2px;
+      }
+      .center div:nth-child(2),
+      .center div:nth-child(4) {
+        rotate: 180deg;
+      } */
+      .container {
+        display: flex;
+        justify-content: center;
+        margin: 25px;
+      }
+      .card {
+        border: 2px solid black;
+        height: 200px;
+        width: calc(180px * 2 / 3);
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        color: red;
+        font-size: 25px;
+        padding: 2px;
+      }
+      .center {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+        font-size: 50px;
+        text-align: center;
+      }
+      .bottom {
+        rotate: 180deg;
+      }
+      .top div:first-child,
+      .bottom div:first-child {
+        padding-left: 2px;
+      }
+      .center div:nth-child(2),
+      .center div:nth-child(4) {
+        /* rotate: 180deg; */
+      /*transform: scaleY(-1);
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="top">
+          <div>4</div>
+          <div>&hearts;</div>
+        </div>
+        <div class="center">
+          <div>&hearts;</div>
+          <div>&hearts;</div>
+          <div>&hearts;</div>
+          <div>&hearts;</div>
+        </div>
+        <div class="bottom">
+          <div>4</div>
+          <div>&hearts;</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

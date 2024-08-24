@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adjustable Progress bar</title>
+    <style>
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      .progress-bar {
+        margin: 40px;
+        width: 200px;
+        height: 30px;
+        /* border: 0.5px solid #040b05; */
+        border-radius: 20px;
+        background-color: gray;
+      }
+      .bar {
+        /* background-color: red; */
+        height: 100%;
+        border-radius: 20px;
+        /* animation: barColor;
+        animation-duration: 4s;
+        animation-iteration-count: infinite; */
+      }
+      /* @keyframes barColor {
+        0% {
+          width: 0;
+          background-color: rgb(101, 225, 87);
+        }
+        25% {
+          width: 25%;
+          background-color: red;
+        }
+        50% {
+          width: 50%;
+          background-color: orangered;
+        }
+        75% {
+          width: 75%;
+          background-color: greenyellow;
+        }
+        100% {
+          width: 100%;
+          background-color: green;
+        }
+      } */
+      .stage-1 {
+        width: 25%;
+        background-color: red;
+      }
+      .stage-2 {
+        width: 50%;
+        background-color: orangered;
+      }
+      .stage-3 {
+        width: 75%;
+        background-color: greenyellow;
+      }
+      .stage-4 {
+        width: 100%;
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress-bar">
+        <div class="bar stage-1"></div>
+      </div>
+    </div>
+  </body>
+</html>

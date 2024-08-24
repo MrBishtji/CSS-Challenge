@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading Animation</title>
+    <style>
+      body {
+        background-color: #cb944d;
+      }
+      .animation {
+        display: flex;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .box {
+        border: 2px solid #0f0c0c;
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+      }
+      .box1 {
+        background-color: rebeccapurple;
+      }
+      .box2 {
+        background-color: cadetblue;
+      }
+      .box3 {
+        background-color: chartreuse;
+      }
+      @keyframes example {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .box {
+        position: relative;
+        animation-name: example;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation">
+      <div class="box box1"></div>
+      <div class="box box2"></div>
+      <div class="box box3"></div>
+    </div>
+  </body>
+</html>

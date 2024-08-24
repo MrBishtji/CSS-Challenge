@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loading animation 3</title>
+    <style>
+      .container {
+        width: 300px;
+        height: 300px;
+        /* border: 20px solid rgba(0, 0, 0, 0.259); */
+        border-radius: 50%;
+        /* position: relative; */
+      }
+      .box {
+        width: 100%;
+        height: 100%;
+        /* position: absolute; */
+        border: 20px solid #6b5b5ba2;
+        border-radius: 50%;
+        animation: round;
+        animation-duration: 1s;
+        /* animation-delay: 1s; */
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        border-top: 20px solid black;
+      }
+      @keyframes round {
+        from {
+          transform: rotate(0deg);
+          /* border-left-color: rgb(4, 4, 4); */
+        }
+        to {
+          transform: rotate(360deg);
+          /* border-left-color: red; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box1"></div>
+      <!-- <div class="box box2"></div> -->
+    </div>
+  </body>
+</html>
