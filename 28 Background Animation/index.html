@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image Animation</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(100deg, red, yellow);
+    }
+
+    .img {
+      width: 100%;
+      height: 60vh;
+      /* object-fit: contain; */
+      background-size: 100% 100%;
+      animation: imgchanger 10s linear infinite;
+    }
+
+    @keyframes imgchanger {
+      0% {
+        background-image: url(1.jpg);
+      }
+
+      20% {
+        background-image: url(2.jpg);
+      }
+
+      40% {
+        background-image: url(3.jpg);
+      }
+
+      60% {
+        background-image: url(4.jpg);
+      }
+
+      80% {
+        background-image: url(5.jpg);
+      }
+
+      100% {
+        background-image: url(6.jpg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="img"></div>
+</body>
+
+</html>
